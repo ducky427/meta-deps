@@ -8,8 +8,6 @@ import networkx as nx
 
 from loaddata import get_package_data
 
-TIMEOUT = 60 * 60 * 24 * 7
-
 def main():
     # only one api server so we'll use the deutschland mirror for downloading
     client = xmlrpclib.ServerProxy('http://pypi.python.org/pypi')
